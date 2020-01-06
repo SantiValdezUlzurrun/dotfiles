@@ -132,6 +132,41 @@ bindsym $mod+Shift+8 move container to workspace number $ws8
 bindsym $mod+Shift+9 move container to workspace number $ws9
 bindsym $mod+Shift+0 move container to workspace number $ws10
 
+# -----Colors-----
+
+set $bg-color 	         #2f343f
+set $inactive-bg-color   #2f343f
+set $text-color          #f3f4f5
+set $inactive-text-color #676E7D
+set $urgent-bg-color     #E53935
+
+# window colors
+#                       border              background         text                 indicator
+#client.focused          $bg-color           $bg-color          $text-color          #00ff00
+#client.unfocused        $inactive-bg-color $inactive-bg-color $inactive-text-color #00ff00
+#client.focused_inactive $inactive-bg-color $inactive-bg-color $inactive-text-color #00ff00
+#client.urgent           $urgent-bg-color    $urgent-bg-color   $text-color          #00ff00
+
+# -----Bar-----
+
+#i3blocks
+bar {
+  	status_command i3blocks -c /home/santi/.config/i3blocks/config
+	font pango:NotoSans-Regular, Icons 11 
+	position top
+	colors {
+		background $bg-color
+	    	separator #757575
+		#                  border             background         text
+		focused_workspace  $bg-color          $bg-color          $text-color
+		inactive_workspace $inactive-bg-color $inactive-bg-color $inactive-text-color
+		urgent_workspace   $urgent-bg-color   $urgent-bg-color   $text-color
+	}
+}
+
+#Polybar
+#exec_always --no-startup-id ~/.config/polybar/launch.sh
+
 # -----Misc-----
 
 # reload the configuration file
@@ -142,5 +177,4 @@ bindsym $mod+Shift+r restart
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
 
 # Exec programs
-exec_always --no-startup-id ~/.config/polybar/launch.sh
 exec_always feh --bg-scale /home/santi/Imagenes/wallpaper.jpg

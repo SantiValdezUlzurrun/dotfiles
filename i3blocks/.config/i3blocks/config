@@ -1,0 +1,6 @@
+[clock]
+command=date +%d/%m/%y" | "%T" "
+interval=1
+
+[internet]
+interval=10
