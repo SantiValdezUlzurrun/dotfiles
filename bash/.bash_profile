@@ -2,8 +2,9 @@
 # ~/.bash_profile
 #
 
+. ~/.profile
+case $- in *i*) . ~/.bashrc;; esac
+
 [[ -f ~/.bashrc ]] && . ~/.bashrc
 
-if ["$(tty)" = "/dev/tty1" ]; then
-	pgrep -x i3 || exec startx
-fi
+

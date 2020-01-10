@@ -15,7 +15,7 @@
 # -----Basic----- 
 
 set $mod Mod4
-font pango:monospace 8
+font pango:Monospace 8
 exec --no-startup-id nm-applet
 
 # Gaps
@@ -39,7 +39,6 @@ bindsym $mod+Shift+q kill
 
 # start dmenu (a program launcher)
 bindsym $mod+d exec dmenu_run
-
 
 # -----Tiling----- 
 
@@ -152,7 +151,7 @@ set $urgent-bg-color     #E53935
 #i3blocks
 bar {
   	status_command i3blocks -c /home/santi/.config/i3blocks/config
-	font pango:NotoSans-Regular, Icons 11 
+	font pango:Monospace, Icons 11 
 	position top
 	colors {
 		background $bg-color
