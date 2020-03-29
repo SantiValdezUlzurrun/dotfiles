@@ -1,3 +1,8 @@
+[volume]
+command=volume
+interval=1
+label= 
+
 [weather]
 command=weather
 interval=once
@@ -6,21 +11,20 @@ label=
 [disk_usage]
 command=disk_space
 interval=once
-label=💽
-
+label=💽 
 
 [cpu_temp]
 command=cputemp
 interval=1800
-label=🔥
+label=🔥 
 
 [date]
 command=day
 interval=once
-label=📅
+label=📅 
 
 [clock]
 command=date +%T" "
 interval=1
-label=🕑
+label=🕑 
 
