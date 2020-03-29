@@ -29,15 +29,15 @@ call plug#end()
 	set tabstop=4
 	set shiftwidth=4
 	"Indent with tabs
-    vnoremap <Tab> >
-    vnoremap <S-Tab> <
-    nnoremap <Tab> >>_
-    nnoremap <S-Tab> <<_
-    "Switch windows
-    nnoremap <C-J> <C-W>j
-    nnoremap <C-K> <C-W>k
-    nnoremap <C-L> <C-W>l
-    nnoremap <C-H> <C-W>h
+	vnoremap <Tab> >
+	vnoremap <S-Tab> <
+	nnoremap <Tab> >>_
+	nnoremap <S-Tab> <<_
+	"Switch windows
+	nnoremap <C-J> <C-W>j
+	nnoremap <C-K> <C-W>k
+	nnoremap <C-L> <C-W>l
+	nnoremap <C-H> <C-W>h
 
 " Check file in shellcheck:
 	map <leader>s :!clear && shellcheck %<CR>
@@ -56,7 +56,7 @@ call plug#end()
 
 " Syntastic options:	
 	set statusline+=%#warningmsg#
-    set statusline+=%{SyntasticStatuslineFlag()}
+	set statusline+=%{SyntasticStatuslineFlag()}
 	set statusline+=%*
 
 	let g:syntastic_always_populate_loc_list = 1
