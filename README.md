@@ -3,7 +3,7 @@ Santi - dotfiles
 
 Uses GNU Stow – https://www.gnu.org/software/stow/
 
-Usage: 
+Usage:  
 `cd ~  
 git clone git://git.notthebe.ee/dotfiles  
 cd dotfiles  
