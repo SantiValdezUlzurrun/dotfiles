@@ -4,7 +4,7 @@ Santi - dotfiles
 Uses GNU Stow – https://www.gnu.org/software/stow/
 
 Usage: 
-cd ~
+`cd ~
 git clone git://git.notthebe.ee/dotfiles
 cd dotfiles
-stow polybar (or i3, rofi, dmenu, etc.)
+stow polybar (or i3, rofi, dmenu, etc.)`
