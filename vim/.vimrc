@@ -13,15 +13,20 @@ call plug#begin()
 	Plug 'tpope/vim-surround'
 	Plug 'PotatoesMaster/i3-vim-syntax'
 	Plug 'xuhdev/vim-latex-live-preview'
+	Plug 'aklt/plantuml-syntax'
 	Plug 'scrooloose/nerdtree'
 	Plug 'octol/vim-cpp-enhanced-highlight'
 	Plug 'vim-airline/vim-airline'
-	Plug 'arcticicestudio/nord-vim'
+"	Plug 'arcticicestudio/nord-vim'
+	Plug 'morhetz/gruvbox'
 	Plug 'christoomey/vim-tmux-navigator'
 	Plug 'guns/vim-clojure-static'
-	Plug 'tpope/vim-fireplace'
 	Plug 'guns/vim-clojure-highlight'
-
+	Plug 'terryma/vim-multiple-cursors'
+	Plug 'kien/ctrlp.vim'
+	Plug 'vim-scripts/haskell.vim'
+	Plug 'valloric/youcompleteme'
+	Plug 'rust-lang/rust.vim'
 call plug#end()
 
 " Basics
@@ -59,7 +64,7 @@ call plug#end()
 	map <F3> :LLPStartPreview<Enter>
 
 " Open tree of directories:
-	map <C-n> :NERDTreeToggle<CR>
+	map <C-e> :NERDTreeToggle<CR>
 
 " Syntastic options:
 	set statusline+=%#warningmsg#
@@ -77,7 +82,9 @@ call plug#end()
 	  au InsertEnter * set timeoutlen=0
 	  au InsertLeave * set timeoutlen=1000
 	augroup END
-" Colorscheme Nord
-	colorscheme nord
+" Colorscheme 
+"	colorscheme nord
+	colorscheme gruvbox
 
-	set clipboard=unnamedplus 
+	set clipboard=unnamedplus
+
